@@ -36,10 +36,10 @@ Playlist.prototype.addTrack = function(trackObj) {
 }
 
 Playlist.prototype.overallRating = function() {
-  let average = 0
-  this.tracks.forEach((musicTrack) => {
-    average += musicTrack.rating;
-  })
+  let average = this.tracks.reduce((avg, next) => {
+    return (avg += next.rating)
+  }, 0)
+
   console.log(average/this.tracks.length)
 }
 
