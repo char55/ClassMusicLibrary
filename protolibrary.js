@@ -60,7 +60,7 @@ Playlist.prototype.totalDuration = function() {
 let abba = new Track('Mammamia', 5, 2)
 let lala = new Track('LaLaLand', 1, 2)
 let ham = new Track('My Shot', 5, 5)
-let side = new Track('My Brightside', 5, 2)
+let side = new Track('Mr. Brightside', 5, 2)
 
 let musicals = new Playlist('musicals')
 let awesome = new Playlist('awesome')
